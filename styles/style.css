@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color: #f3efec;
+  --text-color: #312a4e;
+  --accent-color: #ffab6b;
+  --main-font: 'Raleway';
+  --accent-font: 'STIX Two Text';
+} 
+
 .page {
   min-inline-size: 360px;
   margin: 0;
