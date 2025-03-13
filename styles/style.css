@@ -37,6 +37,12 @@ figure {
   flex-direction: column;
 }
 
+.header__title {
+  padding-top: 10%;
+  padding-bottom: 40px;
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
+}
+
 .heading {
   align-self: center;
   font-family: var(--accent-font, 'STIX Two Text');
@@ -49,8 +55,15 @@ figure {
   flex-direction: column;
 }
 
+.content__title {
+  padding-top: 7%;
+  padding-bottom: 2.5%;
+  font-size: 30px;
+}
+
 .content-section {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 5vi;
+  /* padding-left: 5vi;
+  padding-right: 5vi; */
 }
