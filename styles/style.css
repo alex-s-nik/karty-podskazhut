@@ -13,8 +13,11 @@
 } 
 
 .page {
-  min-inline-size: 360px;
   margin: 0;
+  color: var(--text-color, #312a4e);
+  font-family: var(--main-font, 'Raleway');
+  background-color: var(--bg-color, #f3efec);
+  min-inline-size: 360px;
 }
 
 p,
@@ -27,4 +30,27 @@ ol,
 li,
 figure {
   margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  align-self: center;
+  font-family: var(--accent-font, 'STIX Two Text');
+  font-weight: 600;
+  line-height: 0.9em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 5vi;
 }
