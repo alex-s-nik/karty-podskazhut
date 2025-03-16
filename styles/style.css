@@ -67,3 +67,15 @@ figure {
   /* padding-left: 5vi;
   padding-right: 5vi; */
 }
+
+.content__text-block {
+  font-size: 18px;
+}
+
+.content__text-block .content__paragraph:not(:last-child) {
+  padding-bottom: 1.5em;
+}
+
+.content__link {
+  color: inherit;
+}
