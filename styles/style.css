@@ -79,3 +79,37 @@ figure {
 .content__link {
   color: inherit;
 }
+
+.content__blockquote {
+  width: 75%;
+  padding-bottom: 1.5em;
+  font-style: italic;
+  line-height: 200%;
+}
+
+.content__list {
+  list-style: none;
+  inset-inline-start: 40px;
+}
+
+.content__list-item {
+  position: relative;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+.content__list-item:last-child {
+  padding-bottom: 0;
+}
+
+.content__list-item::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -10px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url(../images/marker-light.svg);
+  background-position: center center;
+}
