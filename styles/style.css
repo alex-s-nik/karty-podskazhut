@@ -113,3 +113,13 @@ figure {
   background-image: url(../images/marker-light.svg);
   background-position: center center;
 }
+
+.content__text-block_type_first-lettered::first-letter {
+  display: inline-block;
+  margin-right: 4px;
+  padding-right: 4px;
+  padding-left: 4px;
+  font-weight: bold;
+  font-size: 30px;
+  background-color: var(--accent-color);
+}
