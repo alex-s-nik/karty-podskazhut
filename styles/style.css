@@ -64,8 +64,8 @@ figure {
 .content-section {
   max-width: 1440px;
   margin: 0 auto;
-  /* padding-left: 5vi;
-  padding-right: 5vi; */
+  padding-right: 5vi;
+  padding-left: 5vi;
 }
 
 .content__text-block {
@@ -122,4 +122,21 @@ figure {
   font-weight: bold;
   font-size: 30px;
   background-color: var(--accent-color);
+}
+
+.content__figure {
+  position: relative;
+  left: -5vi;
+  width: calc(100% + 10vi);
+  padding: 7% 0;
+}
+
+.content__picture-caption {
+  border-bottom: #b3b3b3 1px solid;
+  padding: 20px 0 18px;
+  text-align: center;
+}
+
+.content__picture {
+  width: 100%;
 }
