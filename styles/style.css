@@ -88,6 +88,7 @@ figure {
 
 .content__blockquote {
   width: 75%;
+  margin: 0 auto;
   padding-bottom: 1.5em;
   font-style: italic;
   line-height: 200%;
