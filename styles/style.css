@@ -249,3 +249,15 @@ figure {
 a:focus-visible, button:focus-visible {
   outline: var(--text-color) 1px solid;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  border-top: var(--text-color) 1px solid;
+  padding: 2.5%;
+}
+
+.footer__copyright {
+  font-size: 18px;
+}
