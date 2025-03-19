@@ -44,8 +44,8 @@ figure {
 }
 
 .header__title {
-  padding-top: 10%;
-  padding-bottom: 40px;
+  padding-block-start: 10%;
+  padding-block-end: 40px;
   font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
 }
 
@@ -62,16 +62,15 @@ figure {
 }
 
 .content__title {
-  padding-top: 7%;
-  padding-bottom: 2.5%;
+  padding-block-start: 7%;
+  padding-block-end: 2.5%;
   font-size: 30px;
 }
 
 .content-section {
   max-width: 1440px;
   margin: 0 auto;
-  padding-right: 5vi;
-  padding-left: 5vi;
+  padding-inline: 5vi;
 }
 
 .content__text-block {
@@ -79,7 +78,7 @@ figure {
 }
 
 .content__text-block .content__paragraph:not(:last-child) {
-  padding-bottom: 1.5em;
+  padding-block-end: 1.5em;
 }
 
 .content__link {
@@ -89,7 +88,7 @@ figure {
 .content__blockquote {
   width: 75%;
   margin: 0 auto;
-  padding-bottom: 1.5em;
+  padding-block-end: 1.5em;
   font-style: italic;
   line-height: 200%;
 }
@@ -101,19 +100,19 @@ figure {
 
 .content__list-item {
   position: relative;
-  padding-bottom: 10px;
-  padding-left: 15px;
+  padding-block-end: 10px;
+  padding-inline-start: 15px;
 }
 
 .content__list-item:last-child {
-  padding-bottom: 0;
+  padding-block-end: 0;
 }
 
 .content__list-item::before {
   content: '';
   position: absolute;
-  top: 3px;
-  left: -10px;
+  inset-block-start: 3px;
+  inset-inline-start: -10px;
   display: block;
   width: 15px;
   height: 15px;
@@ -127,9 +126,8 @@ figure {
 
 .content__text-block_type_first-lettered::first-letter {
   display: inline-block;
-  margin-right: 4px;
-  padding-right: 4px;
-  padding-left: 4px;
+  margin-inline-end: 4px;
+  padding-inline: 4px;
   font-weight: bold;
   font-size: 30px;
   background-color: var(--accent-color);
@@ -141,13 +139,13 @@ figure {
 
 .content__figure {
   position: relative;
-  left: -5vi;
+  inset-inline-start: -5vi;
   width: calc(100% + 10vi);
   margin: 7% 0;
 }
 
 .content__picture-caption {
-  border-bottom: var(--bg-color) 1px solid;
+  border-block-end: var(--bg-color) 1px solid;
   padding: 20px 0 18px;
   font-size: 18px;
   text-align: center;
@@ -163,7 +161,7 @@ figure {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 7%;
+  margin-block-start: 7%;
   border: var(--text-color) 1px solid;
   aspect-ratio: 4/3;
 }
@@ -185,7 +183,7 @@ figure {
   content: '';
   position: absolute;
   bottom: 0.12em;
-  left: -2%;
+  inset-inline-start: -2%;
   z-index: -1;
   display: block;
   width: 104%;
@@ -202,10 +200,8 @@ figure {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border-top: var(--text-color) 1px solid;
-  border-bottom: var(--text-color) 1px solid;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  border-block: var(--text-color) 1px solid;
+  padding-block: 20px;
 }
 
 .header__logo {
@@ -217,10 +213,6 @@ figure {
   padding-inline-start: 0;
   list-style: none;
 }
-
-/* .header__theme-toggler {
-  padding-left: 0;
-} */
 
 .header__theme-button {
   position: relative;
@@ -257,8 +249,8 @@ figure {
 .header__theme-button_is-active::after {
   content: '';
   position: absolute;
-  bottom: 0.12em;
-  left: -2%;
+  inset-block-end: 0.12em;
+  inset-inline-start: -2%;
   z-index: -1;
   display: block;
   width: 100%;
@@ -277,8 +269,8 @@ a:focus-visible, button:focus-visible {
 .footer {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
-  border-top: var(--text-color) 1px solid;
+  margin-block-start: 10%;
+  border-block-start: var(--text-color) 1px solid;
   padding: 2.5%;
 }
 
