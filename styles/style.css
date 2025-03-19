@@ -204,9 +204,6 @@ figure {
   padding-block: 20px;
 }
 
-.header__logo {
-}
-
 .header__theme-toggler {
   display: flex;
   gap: 10px;
@@ -232,14 +229,6 @@ figure {
 
 .header__theme-button:disabled {
   pointer-events: none;
-}
-
-.header__theme-button_type_dark {
-
-}
-
-.header__theme-button_type_light {
-
 }
 
 .header__theme-button_is-active {
