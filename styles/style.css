@@ -149,6 +149,7 @@ figure {
 .content__picture-caption {
   border-bottom: var(--bg-color) 1px solid;
   padding: 20px 0 18px;
+  font-size: 18px;
   text-align: center;
 }
 
