@@ -32,6 +32,12 @@ figure {
   margin: 0;
 }
 
+.theme_dark {
+  --bg-color: #171717;
+  --text-color: #b3b3b3;
+  --accent-color: transparent;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -114,6 +120,10 @@ figure {
   background-position: center center;
 }
 
+.theme_dark .content__list-item::before {
+  background-image: url(../images/marker-dark.svg);
+}
+
 .content__text-block_type_first-lettered::first-letter {
   display: inline-block;
   margin-right: 4px;
@@ -122,6 +132,10 @@ figure {
   font-weight: bold;
   font-size: 30px;
   background-color: var(--accent-color);
+}
+
+.theme_dark .content__text-block_type_first-lettered::first-letter {
+  border: var(--text-color) 1px solid;
 }
 
 .content__figure {
@@ -175,6 +189,10 @@ figure {
   width: 104%;
   height: 0.25em;
   background-color: var(--accent-color);
+}
+
+.theme_dark .colored-text::after {
+  background-image: url(../images/pattern.svg);
 }
 
 .header__menu {
@@ -244,6 +262,10 @@ figure {
   width: 100%;
   height: 0.25em;
   background-color: var(--accent-color);
+}
+
+.theme_dark .header__theme-button_is-active::after {
+  background-image: url(../images/pattern.svg);
 }
 
 a:focus-visible, button:focus-visible {
