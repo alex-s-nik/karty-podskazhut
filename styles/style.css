@@ -95,8 +95,8 @@ figure {
 }
 
 .content__list {
+  padding-inline-start: 23px;
   list-style: none;
-  inset-inline-start: 40px;
 }
 
 .content__list-item {
