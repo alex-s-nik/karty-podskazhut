@@ -142,11 +142,11 @@ figure {
   position: relative;
   left: -5vi;
   width: calc(100% + 10vi);
-  padding: 7% 0;
+  margin: 7% 0;
 }
 
 .content__picture-caption {
-  border-bottom: #b3b3b3 1px solid;
+  border-bottom: var(--bg-color) 1px solid;
   padding: 20px 0 18px;
   text-align: center;
 }
