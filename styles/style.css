@@ -77,6 +77,8 @@ figure {
   font-size: 18px;
 }
 
+/* добавление отступа снизу для всех параграфов в  текстовом блоке,
+кроме последнего  */
 .content__text-block .content__paragraph:not(:last-child) {
   padding-block-end: 1.5em;
 }
@@ -120,6 +122,7 @@ figure {
   inset-inline-start: -10px;
 }
 
+/* маркеры списка для темной темы */
 .theme_dark .content__list-item::before {
   background-image: url(../images/marker-dark.svg);
 }
@@ -133,6 +136,7 @@ figure {
   background-color: var(--accent-color);
 }
 
+/* оформление буквицы для темной темы */
 .theme_dark .content__text-block_type_first-lettered::first-letter {
   border: var(--text-color) 1px solid;
 }
@@ -191,6 +195,7 @@ figure {
   inset-inline-start: -2%;
 }
 
+/* оформление декорированного текста для темной темы */
 .theme_dark .colored-text::after {
   background-image: url(../images/pattern.svg);
 }
@@ -247,6 +252,8 @@ figure {
   inset-inline-start: -2%;
 }
 
+/* оформление активной кнопки переключения тем
+для темной темы */
 .theme_dark .header__theme-button_is-active::after {
   background-image: url(../images/pattern.svg);
 }
