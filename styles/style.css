@@ -50,10 +50,10 @@ figure {
 }
 
 .heading {
-  align-self: center;
   font-family: var(--accent-font, 'STIX Two Text');
   font-weight: 600;
   line-height: 0.9em;
+  text-align: center;
 }
 
 .content {
@@ -100,8 +100,8 @@ figure {
 
 .content__list-item {
   position: relative;
-  padding-block-end: 10px;
   padding-inline-start: 15px;
+  padding-block-end: 10px;
 }
 
 .content__list-item:last-child {
@@ -111,13 +111,13 @@ figure {
 .content__list-item::before {
   content: '';
   position: absolute;
-  inset-block-start: 3px;
-  inset-inline-start: -10px;
   display: block;
   width: 15px;
   height: 15px;
   background-image: url(../images/marker-light.svg);
   background-position: center center;
+  inset-block-start: 3px;
+  inset-inline-start: -10px;
 }
 
 .theme_dark .content__list-item::before {
@@ -139,9 +139,9 @@ figure {
 
 .content__figure {
   position: relative;
-  inset-inline-start: -5vi;
   width: calc(100% + 10vi);
   margin: 7% 0;
+  inset-inline-start: -5vi;
 }
 
 .content__picture-caption {
@@ -183,12 +183,12 @@ figure {
   content: '';
   position: absolute;
   bottom: 0.12em;
-  inset-inline-start: -2%;
   z-index: -1;
   display: block;
   width: 104%;
   height: 0.25em;
   background-color: var(--accent-color);
+  inset-inline-start: -2%;
 }
 
 .theme_dark .colored-text::after {
@@ -238,13 +238,13 @@ figure {
 .header__theme-button_is-active::after {
   content: '';
   position: absolute;
-  inset-block-end: 0.12em;
-  inset-inline-start: -2%;
   z-index: -1;
   display: block;
   width: 100%;
   height: 0.25em;
   background-color: var(--accent-color);
+  inset-block-end: 0.12em;
+  inset-inline-start: -2%;
 }
 
 .theme_dark .header__theme-button_is-active::after {
