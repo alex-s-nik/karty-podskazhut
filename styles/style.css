@@ -118,7 +118,7 @@ figure {
   height: 15px;
   background-image: url(../images/marker-light.svg);
   background-position: center center;
-  inset-block-start: 3px;
+  inset-block-start: calc(50% - 10px);
   inset-inline-start: -10px;
 }
 
